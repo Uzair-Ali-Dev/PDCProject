@@ -1,7 +1,7 @@
 import os
 import time
 
-args1 = {"operation": "getRegionData"}
+# args1 = {"operation": "getRegionData"}
 args2 = {
     "operation": "getUserInfo",
     "params": {"zipCode": 102, "minAge": 0, "maxAge": 100},
@@ -9,7 +9,7 @@ args2 = {
 
 start = time.time()
 
-os.system('mpiexec -n 4 python script.py "' + str(args1) + '"')
+os.system('mpiexec -n 4 python script.py "' + str(args2) + '"')
 print("<---->")
 # os.system('mpiexec -n 3 python script.py "' + str(args2) + '"')
 

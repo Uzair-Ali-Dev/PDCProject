@@ -1,3 +1,4 @@
+from collections import UserList
 import helper as h
 from mpi4py import MPI
 import sys, json
@@ -8,7 +9,7 @@ size = comm.Get_size()
 rank = comm.Get_rank()
 data = []
 
-print("Hello world from rank", str(rank), "of", str(size))
+# print("Hello world from rank", str(rank), "of", str(size))
 if rank == 0:
     # Reading Parameters
     args = sys.argv[1]
@@ -105,7 +106,8 @@ if rank == 0:
     if options["operation"] == "getRegionData":
         comm.send(rdata, dest=i)
         comm.send(totalCount, dest=i)
-
+    # elif options["operation"] == "getUserInfo":
+    #     comm.send(rdata, dest=i)
     # Master processing its own set of data
     print("Master Here")
     if options["operation"] == "getRegionData":
@@ -114,12 +116,14 @@ if rank == 0:
         tCount=result["totalCount"]
     elif options["operation"] == "getUserInfo":
         userDetails = h.getUserDetails(data[0:chunk_size], options["params"])
+        print("User Details master---------------------------: ",len(userDetails))
         for i in userDetails:
             usersList.append(i)
 
         # Receiving the results from the processes
-        print("User Details Master: ", userDetails)
 
+        # print("User Details Master: ", userDetails)
+        
     # for i in range(0, chunk_size):
     #     print(data[i])
 
@@ -155,13 +159,21 @@ if rank == 0:
                 usersList.append(j)
             # print("Result: ", result)
 
-        print("User Details: ", usersList)
+        print("User Details---------------------------: ",len(usersList))
+        file = open("PDCProject-master/temp.txt", "w")
+        for i in usersList:
+            # print(key ,value)
+            # dict={'Name':line[0],'Age':age,'Cnic':line[2],'Gender':line[3],'Street':line[5],'ZipCode':line[6],'Vaccinestatus':line[7],'CovidStatus':line[8]}
+            file.write(str(i["Name"]) +"\t"+str(i["Age"])+ "\t" + str(i["Cnic"]) +"\t"+ str(i["Gender"])+"\t"+ str(i["Street"])+"\t"+ str(i["ZipCode"])+"\t"+ str(i["Vaccinestatus"])+"\t"+ str(i["CovidStatus"])+ "\n")
+        # file.write("\b")
+        file.close()
     print("Master Done")
 else:
     # Receiving the chunk size
     chunk_size = comm.recv(source=0)
     # Receiving data from master
     data = comm.recv(source=0)
+    print("child data---------------------------: ",len(data),rank)
     # Recieving options
     options = comm.recv(source=0)
     # print("Chunk Size:", chunk_size)
@@ -177,7 +189,8 @@ else:
         comm.send(tCount, dest=0)
 
     elif options["operation"] == "getUserInfo":
-        userDetails = h.getUserDetails(data, options["params"])
+        userDetails = h.getUserDetails(data, options["params"] )
+        print("User Details child---------------------------: ",len(userDetails),rank)
         comm.send(userDetails, dest=0)
 
     # for i in range(0, chunk_size):

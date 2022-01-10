@@ -79,21 +79,42 @@
       </div>
       <div class="row mt-3">
         <div class="col-sm-12">
-          <table class="table border border-dark">
+          <table class="table border border-dark ">
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">Sno#</th>
+                <th  scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Cnic</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Street</th>
+                <th scope="col">Zipcode</th>
+                <th scope="col">Vaccination Status</th>
+                <th scope="col">Covid Status</th>
               </tr>
             </thead>
             <tbody>
               {% for i in list %}
               <tr>
+                {% comment %} # dict={'Name':line[0],'Age':age,'Cnic':line[2],'Gender':line[3],'Street':line[5],'ZipCode':line[6],'Vaccinestatus':line[7],'CovidStatus':line[8]} {% endcomment %}
                 {% comment %} <th scope="row">1</th> {% endcomment %}
-                <td>{{i.fname}}</td>
-                <td>{{i.lname}}</td>
+                <td class="text-capitalize">{{i.Sno}}</td>
+                <td class="text-capitalize">{{i.Name}}</td>
+                <td class="text-capitalize">{{i.Age}}</td>
+                <td class="text-capitalize">{{i.Cnic}}</td>
+                <td class="text-capitalize">{{i.Gender}}</td>
+                <td class="text-capitalize">{{i.Street}}</td>
+                <td class="text-capitalize">{{i.ZipCode}}</td>
+                {% if i.Vaccinestatus == "not vaccinated"  %}
+                <td class="text-capitalize text-danger "><i class="fa-solid fa-xmark"> </i> {{i.Vaccinestatus}}</td>
+                {% else %}
+                <td class="text-capitalize text-success"><i class="fa-solid fa-check"> </i> {{i.Vaccinestatus}}</td>
+                {% endif %}
+                {% if i.CovidStatus == "positive"  %}
+                <td class="text-capitalize text-danger"><i class="fa-solid fa-face-frown-open"></i> {{i.CovidStatus}}</td>
+                {% else %}
+                <td class="text-capitalize text-success"> <i class="fa-solid fa-face-smile "></i> {{i.CovidStatus}}</td>
+                {% endif %}
                 {% comment %} <td>{{i.cnic}}</td> {% endcomment %}
               </tr>
               {% endfor %}

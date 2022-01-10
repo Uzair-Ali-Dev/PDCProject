@@ -1,40 +1,481 @@
-75850	NEW KARACHI	13	21
-74700	Alhydri GPO	3	9
-75760	BALDIA TOWN	9	14
-75990	KBSE	7	21
-75700	KARACHI I.T.E	5	9
-75900	LIAQATABAD	9	12
-75890	MANGHOPIR	2	11
-75840	METROVILLE	5	15
-74600	NAZIMABAD 	6	16
-75790	KARACHI P.N.A.D.	4	11
-75800	ORANGI TOWN	7	12
-74000	KARACHI CITY G.P.O.	6	12
-75650	KARACHI HABIB BANK	4	11
-75660	LYARI	8	15
-75750	MAURIPUR AF	5	15
-75780	MAURIPUR CE	7	12
-75730	SHER SHAH COLONY	8	17
-75600	CLIFTON	4	15
-74200	KARACHI G.P.O.	6	10
-75580	KARACHI GOVERNOR HOUSE	7	12
-75520	KARACHI HOTEL METROPOLE	3	8
-75620	KEMARI	6	11
-75640	MANORA	8	13
-75530	KARACHI CANTT. 	7	9
-75500	DEFENCE HOUSING SOCIETY	5	9
-75510	KARACHI J.P.M.C	6	14
-74400	KARACHI SADDAR G.P.O.	8	15
-75950	KARACHI FEDERAL B AREA	2	3
-75290	KARACHI GULISTAN-E-JOUHAR (KP-2023) 	6	12
-75300	KARACHI GULSHAN-E-IQBAL 	4	10
-75260	KARACHI GULSHAN-E-JAMAL 	8	11
-75330	KARACHI GULZAR-E-HIJRI	4	7
-75280	KARACHI MOSAMIAT CHOWRANGI	4	10
-75340	KARACHI NEW SABZI MANDI	7	11
-75550	KARACHI NISHTAR ROAD	4	9
-75400	KARACHI P.E.C.H.S BI-2	3	13
-75350	SHAHRA-E-FAISAL	1	8
-75270	KARACHI UNIVERSITY 	6	11
-75460	MEHMOODABAD 	3	8
-74800	NEW TOWN G.P.O.	6	19
+Frank Gallagher	19	420001-0000000-5	M	Manuel Valleys	74600	vaccinated	positive
+Leah Hicks	8	420001-0000001-7	M	Allison Ridges	75260	notvaccinated	negative
+Dr. Matthew Kemp	55	420001-0000002-2	F	Smith Causeway	75760	vaccinated	positive
+Steven Ruiz	104	420001-0000003-3	M	Erika Corners	74600	notvaccinated	negative
+Mrs. Natasha Washington	8	420001-0000004-7	M	Shawna Rapids	75660	vaccinated	positive
+Mariah Martin	37	420001-0000005-5	M	Kimberly Gateway	75850	notvaccinated	positive
+Ricky Gonzales	30	420001-0000100-8	F	Sean Hill	75730	vaccinated	positive
+Colleen Miller	110	420001-0000101-8	F	Carlos Valley	75990	vaccinated	positive
+Joseph Barton	51	420001-0000102-8	F	Dylan Station	74000	notvaccinated	negative
+Diane Jones	19	420001-0000103-7	M	Black Summit	75530	vaccinated	positive
+Michael Garcia	51	420001-0000104-8	F	Wallace Islands	74600	vaccinated	negative
+Morgan Good	75	420001-0000105-1	M	Amy Station	75750	notvaccinated	negative
+Latoya Robinson	2	420001-0000200-5	M	Thompson Lights	75580	vaccinated	positive
+James Harris	1	420001-0000201-6	F	Lisa Stream	74400	notvaccinated	positive
+Walter Taylor	32	420001-0000202-9	M	Tyler Key	75850	notvaccinated	positive
+Christopher Shannon DDS	104	420001-0000203-6	F	Lopez Road	75340	vaccinated	positive
+Christine Williams	102	420001-0000204-8	F	Michael Junction	75850	vaccinated	positive
+Benjamin Hatfield	16	420001-0000205-7	M	Nelson Spring	75270	notvaccinated	positive
+David Hoffman	4	420001-0000300-8	F	Chavez Shoal	75700	notvaccinated	positive
+Daniel Scott	88	420001-0000301-8	F	Griffin Village	75760	notvaccinated	positive
+Alex Gonzalez	99	420001-0000302-6	F	Laura Lake	75270	notvaccinated	positive
+Whitney Pena	1	420001-0000303-2	F	Kim Rapid	75850	vaccinated	negative
+Kristen Morse	0	420001-0000304-1	M	Robert Road	74200	vaccinated	positive
+Alyssa Walker	72	420001-0000305-7	M	Jeffery Divide	75730	notvaccinated	positive
+Corey Smith	101	420001-0001000-4	F	Nathan Fields	75270	notvaccinated	negative
+Rachel Johnson	93	420001-0001001-4	F	Kaylee Valleys	75730	notvaccinated	negative
+Steven Moore	52	420001-0001002-5	M	Brown Bridge	75850	notvaccinated	positive
+Donald Kirk	109	420001-0001003-2	F	Stephanie Drive	75530	notvaccinated	negative
+Aaron Stevens	72	420001-0001004-9	M	Martinez Loop	75780	notvaccinated	positive
+Cynthia Wells	45	420001-0001005-5	M	Jodi Shoals	75580	vaccinated	negative
+Gary Garcia	81	420001-0001100-6	F	Scott Centers	75750	vaccinated	negative
+Martin Johnston	106	420001-0001101-3	M	Christopher Ranch	75300	vaccinated	negative
+Lisa Fernandez	96	420001-0001102-3	M	Joshua Street	75730	notvaccinated	negative
+Tammy Bishop	47	420001-0001103-5	M	Krista Alley	75640	notvaccinated	negative
+Johnny Boyd	77	420001-0001104-7	M	Sonya Loop	74800	vaccinated	positive
+John Smith	56	420001-0001105-2	F	Janice Road	75260	notvaccinated	positive
+Lucas Munoz	96	420001-0001200-6	F	Dale Club	75760	vaccinated	positive
+Craig Carroll	31	420001-0001201-6	F	Christine Circle	75650	notvaccinated	positive
+Chloe Ortiz	7	420001-0001202-5	M	Jack Glens	75650	notvaccinated	negative
+William Stanley	26	420001-0001203-6	F	Reynolds Court	75990	notvaccinated	negative
+Taylor Bryant	102	420001-0001204-6	F	Glover Dam	75760	vaccinated	negative
+Kayla Fitzgerald	86	420001-0001205-2	F	Russell Route	75890	notvaccinated	negative
+Eric Glenn	67	420001-0001300-3	M	Ramirez Mountains	75700	vaccinated	positive
+Matthew Joseph	83	420001-0001301-9	M	Rhodes Motorway	74000	notvaccinated	negative
+John Shaw	69	420001-0001302-2	F	Burch Ridge	75510	notvaccinated	negative
+Daniel Armstrong	23	420001-0001303-4	F	Salas Ferry	75990	notvaccinated	negative
+Anthony Blackburn	77	420001-0001304-4	F	Dawson Trafficway	75850	notvaccinated	positive
+Abigail Parker	51	420001-0001305-3	M	Taylor Knolls	74600	notvaccinated	negative
+Aaron Martin DDS	88	420001-0002000-7	M	Gabriella Ranch	74200	vaccinated	negative
+Lori Gonzales	7	420001-0002001-7	M	Alice Roads	75460	notvaccinated	negative
+Jennifer Stone	19	420001-0002002-2	F	Reyes Ridges	75840	notvaccinated	positive
+Wendy Shannon	33	420001-0002003-4	F	Martinez Shore	75500	vaccinated	negative
+Heather Escobar DDS	103	420001-0002004-6	F	Brian Heights	74600	notvaccinated	positive
+Collin Mcknight	93	420001-0002005-9	M	Patrick Extension	75270	vaccinated	negative
+Janet Williams	27	420001-0002100-5	M	Elizabeth Hills	75340	vaccinated	positive
+Nathan Taylor	109	420001-0002101-4	F	Cox Harbor	75620	notvaccinated	positive
+Christopher Smith	5	420001-0002102-3	M	Troy Spurs	74800	notvaccinated	positive
+Javier Long	9	420001-0002103-4	F	Travis Crescent	75500	notvaccinated	negative
+Jacob White	61	420001-0002104-6	F	Shannon Stravenue	75550	vaccinated	negative
+Kathleen Stewart	17	420001-0002105-6	F	Harmon Islands	75580	vaccinated	positive
+Angelica Francis	53	420001-0002200-3	M	Austin Knoll	75600	vaccinated	negative
+Amanda Haney	78	420001-0002201-2	F	Robles Stream	75730	notvaccinated	negative
+Elizabeth Smith	68	420001-0002202-1	M	Justin Crossroad	75340	notvaccinated	negative
+Kevin Moss	88	420001-0002203-8	F	Cummings Forge	75550	vaccinated	negative
+Erin Castaneda	66	420001-0002204-5	M	Lane Dam	75990	vaccinated	negative
+Victoria Myers	93	420001-0002205-2	F	Kirby Forges	74000	vaccinated	positive
+Sara Sullivan	91	420001-0002300-4	F	Shannon Unions	75840	vaccinated	negative
+David Greene	115	420001-0002301-9	M	Williams Port	75790	notvaccinated	positive
+Katie Zamora	50	420001-0002302-1	M	Morrison Parks	75800	notvaccinated	positive
+Tammy Gutierrez	105	420001-0002303-8	F	Mark Drives	75270	vaccinated	positive
+Louis Johnson	42	420001-0002304-1	M	Kara Stream	75900	vaccinated	positive
+Robert Daniels	17	420001-0002305-9	M	Hernandez Pine	74600	vaccinated	positive
+Johnny Gray	95	420001-0003000-9	M	Darlene Streets	75600	notvaccinated	positive
+Jacob Boone	59	420001-0003001-5	M	Christina Plains	75640	notvaccinated	positive
+Mrs. Barbara Thomas DDS	78	420001-0003002-2	F	Green Forks	75340	vaccinated	positive
+Victoria Lucas	32	420001-0003003-7	M	Lauren Drives	75730	vaccinated	negative
+Michele Bailey	92	420001-0003004-8	F	Gilmore Bypass	75890	vaccinated	negative
+Manuel Cooper	104	420001-0003005-6	F	Amanda Junctions	75400	notvaccinated	negative
+Kimberly Alexander	115	420001-0003100-9	M	Sydney Flats	75790	notvaccinated	negative
+Juan Clark	57	420001-0003101-4	F	Smith Prairie	75650	notvaccinated	negative
+Madison White	58	420001-0003102-4	F	Jamie Ways	75990	notvaccinated	positive
+Jordan Mcdaniel	71	420001-0003103-8	F	Kimberly Dale	75580	vaccinated	negative
+Matthew Watts	70	420001-0003104-4	F	Stephanie Meadow	75510	vaccinated	positive
+Dale Sampson	79	420001-0003105-4	F	Benjamin Station	74200	notvaccinated	negative
+Bruce Kirk	108	420001-0003200-8	F	Duran Rapids	75780	notvaccinated	positive
+Allen Campbell DDS	10	420001-0003201-4	F	Shelton Valleys	74400	notvaccinated	positive
+Matthew Duran	95	420001-0003202-6	F	Melissa Mill	75760	notvaccinated	positive
+Kenneth Ward	105	420001-0003203-6	F	Jack Landing	75580	notvaccinated	negative
+Amanda Cook	104	420001-0003204-2	F	Pierce Loop	74800	notvaccinated	negative
+Stephanie Smith	28	420001-0003205-6	F	Ray Shoal	75580	notvaccinated	positive
+Pamela Green	55	420001-0003300-2	F	Brown Ports	75990	notvaccinated	negative
+Sarah Johnson	87	420001-0003301-1	M	Best Club	75290	vaccinated	positive
+Christina Franklin	94	420001-0003302-6	F	Brown Hollow	75600	vaccinated	negative
+Leroy Cain	108	420001-0003303-7	M	Misty Villages	75460	notvaccinated	positive
+Jessica Taylor	82	420001-0003304-1	M	Richardson Summit	74700	notvaccinated	positive
+William Franklin	69	420001-0003305-3	M	Floyd Glen	75800	vaccinated	positive
+Stanley Ford	50	420001-0004000-6	F	Beth Walk	75400	notvaccinated	negative
+Jennifer Luna	26	420001-0004001-6	F	Cummings Mission	75800	notvaccinated	negative
+Cody Montoya	84	420001-0004002-8	F	Sandra Streets	75750	notvaccinated	positive
+Laura Torres	30	420001-0004003-2	F	Alvarez Crescent	75760	notvaccinated	positive
+Paul Owens	100	420001-0004004-1	M	Elliott Manors	75660	notvaccinated	negative
+Bruce Horne	48	420001-0004005-1	M	Ashley Passage	75900	notvaccinated	positive
+Kimberly Short	2	420001-0004100-2	F	Jason Bridge	75550	notvaccinated	positive
+Lisa Buckley	45	420001-0004101-6	F	Duke Islands	74800	notvaccinated	positive
+Angela Villanueva	107	420001-0004102-3	M	Le Keys	75850	notvaccinated	negative
+Chelsey Lawson	3	420001-0004103-5	M	Williams Plaza	75890	vaccinated	positive
+David Hayes	80	420001-0004104-2	F	Jones Cove	75550	notvaccinated	negative
+Charles Lamb	1	420001-0004105-2	F	Damon Prairie	75460	notvaccinated	positive
+Marvin Cruz	9	420001-0004200-7	M	Caitlin Burgs	75520	vaccinated	negative
+Samantha Lowe	99	420001-0004201-7	M	Carter Light	75660	notvaccinated	positive
+Kerri Reed	69	420001-0004202-4	F	Tina Crest	75500	vaccinated	positive
+Natasha Moore	98	420001-0004203-1	M	Chambers Fords	75850	vaccinated	negative
+Derrick Gross	113	420001-0004204-6	F	Daniel Squares	75260	vaccinated	positive
+Sally Williams	13	420001-0004205-8	F	Smith Pines	75730	notvaccinated	negative
+John Peterson	113	420001-0004300-6	F	Michael Lodge	75840	vaccinated	negative
+Amy Jones	101	420001-0004301-9	M	Pamela Road	75280	notvaccinated	negative
+Nicholas Davis	69	420001-0004302-5	M	Moreno Track	75300	notvaccinated	negative
+Erin Houston	63	420001-0004303-2	F	Cardenas Meadow	75460	notvaccinated	positive
+Desiree Atkins	2	420001-0004304-4	F	Amanda Pines	75400	vaccinated	positive
+Gary Beck	38	420001-0004305-4	F	Mark Greens	75760	vaccinated	negative
+Joel Escobar	2	420001-0100000-4	F	Thomas Viaduct	75750	vaccinated	negative
+Mitchell Bailey	61	420001-0100001-4	F	Powell Place	75850	vaccinated	negative
+Mitchell Smith	35	420001-0100002-9	M	Walker Plain	75800	notvaccinated	negative
+Melissa Taylor	13	420001-0100003-7	M	Powers Highway	75550	notvaccinated	negative
+Raven Bush	40	420001-0100004-3	M	Robinson Points	75850	notvaccinated	positive
+Jennifer Jones	82	420001-0100005-2	F	Carr View	74400	notvaccinated	negative
+Andrew Smith	1	420001-0100100-8	F	Ashley Burg	75350	notvaccinated	negative
+Stephen Russo	53	420001-0100101-9	M	Russell Summit	75260	vaccinated	positive
+Ryan Vargas	17	420001-0100102-3	M	Walsh Loop	75530	vaccinated	positive
+Patricia Montgomery	79	420001-0100103-6	F	Jackson Oval	75780	notvaccinated	negative
+Diane Flores	33	420001-0100104-4	F	Kimberly Rue	75510	vaccinated	positive
+Richard Hawkins	9	420001-0100105-8	F	Ronnie Dam	75340	notvaccinated	positive
+Sandra Rios	47	420001-0100200-7	M	Kim Circles	75950	vaccinated	negative
+Marvin Collins	38	420001-0100201-1	M	Lloyd Lights	75600	vaccinated	negative
+Courtney Gonzales	106	420001-0100202-8	F	Taylor Manor	75780	vaccinated	positive
+Kyle Herrera	29	420001-0100203-5	M	Moses Flats	75850	vaccinated	negative
+Scott Johnson	62	420001-0100204-5	M	Contreras Fords	75290	vaccinated	negative
+Kayla Barker	97	420001-0100205-1	M	Harrison Crossing	74600	notvaccinated	positive
+Elizabeth Middleton	115	420001-0100300-2	F	Oliver Rest	75600	vaccinated	negative
+Morgan Carpenter	20	420001-0100301-8	F	Fernandez Village	75900	vaccinated	positive
+Christina White	74	420001-0100302-1	M	Ramirez Fork	75640	vaccinated	negative
+Julie Murray	1	420001-0100303-3	M	Browning Motorway	75280	vaccinated	positive
+Michael Webster	73	420001-0100304-2	F	Tammy Club	75660	notvaccinated	negative
+Isaac Rivera	9	420001-0100305-4	F	Collins Forest	75800	notvaccinated	negative
+Brian Mcmahon	63	420001-0101000-3	M	Jose Springs	74600	notvaccinated	negative
+Paul Savage	56	420001-0101001-7	M	Kimberly Squares	75730	notvaccinated	negative
+Michael Warren	70	420001-0101002-6	F	Derrick Summit	74200	notvaccinated	positive
+Amber Martinez	20	420001-0101003-6	F	Steven Parkway	74000	notvaccinated	positive
+Theresa Marsh	109	420001-0101004-6	F	Bell Way	75600	vaccinated	negative
+Amanda Lee	107	420001-0101005-7	M	Palmer Walks	75850	notvaccinated	negative
+Laura Shaw	55	420001-0101100-5	M	Patricia Lodge	75900	notvaccinated	positive
+Erin Wade	33	420001-0101101-7	M	Williams Crossing	74800	notvaccinated	negative
+Kristen Gutierrez	3	420001-0101102-7	M	Landry Tunnel	75580	notvaccinated	positive
+Jorge Dillon	73	420001-0101103-2	F	Douglas Island	75260	notvaccinated	negative
+Jennifer Martinez	25	420001-0101104-5	M	Joshua Shoal	74800	vaccinated	negative
+Nathan Williams	106	420001-0101105-4	F	Rice Ramp	75510	vaccinated	negative
+Adrian Huffman	53	420001-0101200-1	M	Vasquez Turnpike	75850	vaccinated	positive
+Austin Williams	77	420001-0101201-2	F	Martin Pine	75760	vaccinated	positive
+Kayla Thomas	106	420001-0101202-5	M	Taylor Ramp	75260	vaccinated	positive
+Tammy Fernandez	108	420001-0101203-4	F	Alison Corner	75730	vaccinated	positive
+Dennis Ho	84	420001-0101204-5	M	Nathan Stream	75600	notvaccinated	positive
+James Gordon	21	420001-0101205-9	M	Rachel Port	75290	vaccinated	positive
+Rita Allen	41	420001-0101300-6	F	Hodges Light	75700	vaccinated	positive
+Craig Patel	61	420001-0101301-3	M	Daniel Greens	75990	vaccinated	negative
+Richard Adams	12	420001-0101302-5	M	Sergio Ferry	75350	vaccinated	negative
+Alan Gonzalez	1	420001-0101303-7	M	Melissa Plains	74400	vaccinated	positive
+Diane Burke	18	420001-0101304-2	F	Eric Mill	74000	vaccinated	positive
+Billy Heath	47	420001-0101305-4	F	Blair Common	74000	vaccinated	positive
+Jorge Chang	113	420001-0102000-3	M	Trevino Creek	75600	vaccinated	negative
+Gary Daniels	51	420001-0102001-2	F	Cathy Isle	74000	notvaccinated	negative
+John Pacheco	6	420001-0102002-1	M	Danielle Park	75730	notvaccinated	positive
+Carrie Rush	92	420001-0102003-5	M	Wise Expressway	75890	vaccinated	negative
+Andrew Edwards	0	420001-0102004-4	F	Parker Glen	75780	notvaccinated	positive
+Michael Scott	43	420001-0102005-2	F	Jordan Green	75290	notvaccinated	positive
+Laura Brown	64	420001-0102100-8	F	Diaz Forges	75290	notvaccinated	negative
+Sheila Palmer	3	420001-0102101-1	M	Ian Squares	75840	vaccinated	negative
+Paul Anderson	37	420001-0102102-9	M	Angela Common	75510	notvaccinated	positive
+Tiffany Marshall	1	420001-0102103-4	F	Paula Mount	75290	notvaccinated	negative
+Mr. Stephen Bridges	76	420001-0102104-2	F	Donaldson Coves	74400	vaccinated	positive
+Mrs. Stephanie Johnson	70	420001-0102105-5	M	Elizabeth Mall	75300	notvaccinated	positive
+Gregory Harrington	71	420001-0102200-9	M	Gabriela Summit	75750	notvaccinated	negative
+Jenna Jones	91	420001-0102201-2	F	Frederick Ridges	74700	notvaccinated	negative
+Pamela Price	1	420001-0102202-1	M	Hailey Shoal	74700	notvaccinated	negative
+Jacob Stark	19	420001-0102203-4	F	Cain Crossroad	75550	notvaccinated	positive
+Lindsey Washington	17	420001-0102204-2	F	Maria Rapid	75840	vaccinated	negative
+Richard Mitchell	69	420001-0102205-9	M	Seth Plaza	74000	vaccinated	negative
+Katie Fisher	60	420001-0102300-8	F	Leonard Shores	75990	vaccinated	negative
+Rhonda Johnson	40	420001-0102301-5	M	Karen Gateway	75700	notvaccinated	negative
+Nicole Moore	78	420001-0102302-5	M	Steven Fields	74600	vaccinated	positive
+Regina Cole	111	420001-0102303-9	M	Reyes Crescent	75850	vaccinated	positive
+Michelle Holmes	23	420001-0102304-6	F	Johnson Pike	75730	vaccinated	positive
+Cody Price	59	420001-0102305-1	M	Kristina Road	75900	notvaccinated	negative
+Lori Wagner	50	420001-0103000-4	F	Andrew Plain	75280	notvaccinated	positive
+Stacy Russell	93	420001-0103001-9	M	Olivia Greens	75260	notvaccinated	positive
+Angela Robinson	91	420001-0103002-6	F	Grant Cliff	75600	notvaccinated	negative
+Michelle Case	50	420001-0103003-3	M	Martinez Crescent	75800	vaccinated	positive
+Victor Hall	99	420001-0103004-5	M	Brooks Groves	74400	vaccinated	negative
+Robert Henry	93	420001-0103005-8	F	Lang Locks	74700	vaccinated	positive
+Ronald Richardson	28	420001-0103100-1	M	Cynthia Ville	75290	notvaccinated	positive
+Pamela Pineda	56	420001-0103101-3	M	Shawn Corners	75620	notvaccinated	positive
+Katherine Jones	74	420001-0103102-5	M	Gould Lock	75750	vaccinated	positive
+Ariel Brock	9	420001-0103103-1	M	Christopher Trail	75270	notvaccinated	negative
+Maxwell Ramirez	84	420001-0103104-7	M	West Fork	75900	vaccinated	positive
+Martin Rhodes	14	420001-0103105-8	F	Shannon Forges	75700	notvaccinated	negative
+Tanya Booth	88	420001-0103200-9	M	Lisa Burgs	75620	notvaccinated	negative
+David Mendoza	67	420001-0103201-9	M	Choi Well	75580	notvaccinated	positive
+Paul Patterson	98	420001-0103202-5	M	Hall Square	75890	notvaccinated	negative
+Kayla Harris	97	420001-0103203-5	M	Walter Stream	75840	notvaccinated	negative
+Nancy Cross	90	420001-0103204-5	M	Smith Landing	74600	vaccinated	negative
+Mike Jackson	65	420001-0103205-1	M	Christine Mountains	75900	vaccinated	positive
+Angela Noble	47	420001-0103300-3	M	Jackson Street	75500	notvaccinated	negative
+Debbie Waters	61	420001-0103301-6	F	Anderson Manor	74200	vaccinated	positive
+Kimberly Smith	96	420001-0103302-4	F	Chavez Orchard	75900	vaccinated	negative
+Patricia Mills	113	420001-0103303-2	F	Johnson Forest	75840	vaccinated	negative
+Rebecca Lewis	102	420001-0103304-8	F	Bailey Ridges	75760	vaccinated	negative
+Alice Washington	11	420001-0103305-3	M	Barker Flat	75660	notvaccinated	negative
+Vincent Patterson	11	420001-0104000-9	M	Charles Squares	75640	vaccinated	positive
+Tiffany Vasquez	115	420001-0104001-6	F	Larry Parkway	75350	notvaccinated	negative
+Richard Lopez	30	420001-0104002-8	F	Johnson Keys	75850	notvaccinated	positive
+Michael Daniel	3	420001-0104003-6	F	Deanna Corners	75650	vaccinated	negative
+Maria Anderson	68	420001-0104004-4	F	Campos Islands	75550	vaccinated	positive
+Jessica Rodriguez	108	420001-0104005-3	M	Roberts Green	75330	vaccinated	negative
+Sarah Knight	92	420001-0104100-6	F	Padilla Bypass	75600	notvaccinated	negative
+Cameron Henry	104	420001-0104101-3	M	Brown Spur	75800	vaccinated	negative
+Craig Murray	49	420001-0104102-2	F	Johnston Manors	75580	vaccinated	positive
+Jesus Clarke	78	420001-0104103-8	F	Thompson Terrace	75400	notvaccinated	negative
+Rebecca Noble	32	420001-0104104-1	M	Joseph Fort	75340	notvaccinated	positive
+Brian Watson	18	420001-0104105-1	M	Rachael Place	75620	vaccinated	positive
+Elizabeth Fitzgerald	51	420001-0104200-8	F	James Meadow	75890	vaccinated	negative
+Caroline Fowler	91	420001-0104201-2	F	Moody Summit	75520	vaccinated	positive
+James Smith	38	420001-0104202-2	F	Jeffery Inlet	75840	notvaccinated	positive
+Teresa Cook	14	420001-0104203-5	M	Ricky Cliff	75660	notvaccinated	negative
+Christopher Boyd	25	420001-0104204-6	F	Sandra Harbor	75990	notvaccinated	negative
+Keith Hill	27	420001-0104205-9	M	Wilson Ranch	75840	vaccinated	negative
+Robert Mitchell	5	420001-0104300-6	F	Crosby Estate	75780	vaccinated	positive
+William Lewis	114	420001-0104301-9	M	Drake River	74200	notvaccinated	negative
+Carl Haley	78	420001-0104302-4	F	Rodriguez Junction	75990	vaccinated	negative
+Crystal Hale DDS	15	420001-0104303-6	F	Justin Mill	75400	vaccinated	positive
+April Bennett	60	420001-0104304-9	M	Davila Coves	75350	vaccinated	negative
+Sierra Perry	81	420001-0104305-5	M	Jackson Lock	75790	vaccinated	negative
+Ashley Wilson	47	420001-0200000-6	F	Robert Island	75650	vaccinated	negative
+Ryan Dorsey	62	420001-0200001-4	F	Andrew Point	75600	vaccinated	negative
+Ronald Mcdowell	2	420001-0200002-3	M	White Trail	75790	vaccinated	positive
+Courtney Vazquez	42	420001-0200003-9	M	Todd Path	75990	notvaccinated	negative
+Taylor Mendez	16	420001-0200004-2	F	Alexander Wall	74600	vaccinated	negative
+Julie Ingram	40	420001-0200005-6	F	Sonya Divide	74800	notvaccinated	negative
+Frank Rich	27	420001-0200100-5	M	Morrison Loaf	75270	notvaccinated	positive
+Samantha Gonzalez DDS	33	420001-0200101-6	F	Julia Inlet	75750	vaccinated	negative
+Ernest Taylor	8	420001-0200102-8	F	James Stream	75790	vaccinated	positive
+Brent Bowman	54	420001-0200103-5	M	Christian Stream	75730	vaccinated	negative
+Judy Simmons MD	93	420001-0200104-5	M	Scott Square	75700	vaccinated	negative
+Laurie Webster	9	420001-0200105-8	F	Roberto Forges	74600	notvaccinated	negative
+Michelle Fuentes	0	420001-0200200-5	M	Cynthia Islands	75850	vaccinated	positive
+Laura Reyes	50	420001-0200201-3	M	Norman Lane	75260	vaccinated	positive
+Jodi Rodriguez	29	420001-0200202-5	M	Harrell Spring	74700	notvaccinated	negative
+Elizabeth Wall	87	420001-0200203-5	M	Carla Vista	75530	notvaccinated	positive
+Kristin Hernandez	91	420001-0200204-6	F	Brown Turnpike	75990	notvaccinated	positive
+Jason Kelly	23	420001-0200205-7	M	Hamilton Turnpike	75340	notvaccinated	positive
+Brittany Hatfield	94	420001-0200300-1	M	Morgan Mews	75850	vaccinated	positive
+Pamela Jensen	10	420001-0200301-8	F	Jennifer Row	75530	notvaccinated	positive
+Natalie Hanson	62	420001-0200302-3	M	Valencia Knolls	75520	notvaccinated	negative
+Toni Gallagher	32	420001-0200303-2	F	Taylor Courts	75600	notvaccinated	positive
+Shawn Norton	4	420001-0200304-2	F	Buchanan Run	75700	vaccinated	positive
+Miguel Wilson	29	420001-0200305-7	M	Weber Freeway	75990	notvaccinated	positive
+Ronald Peterson	44	420001-0201000-3	M	Brett Radial	75780	notvaccinated	negative
+Jennifer Sanders	49	420001-0201001-2	F	Emily Bridge	74400	notvaccinated	negative
+Richard Kim	9	420001-0201002-4	F	Cooper Divide	74700	notvaccinated	positive
+Dustin Baker	89	420001-0201003-1	M	Ray Circles	75850	notvaccinated	negative
+Rebecca Davis	17	420001-0201004-1	M	Arthur Wells	75650	vaccinated	positive
+Bryce Cook	112	420001-0201005-8	F	Johnny Mountains	75750	vaccinated	negative
+Ashley Ray	45	420001-0201100-1	M	Christine Loaf	75890	vaccinated	negative
+Brooke Woodward	49	420001-0201101-1	M	Jones Fort	75750	notvaccinated	negative
+Brenda Barnes	86	420001-0201102-7	M	Richard Port	74800	vaccinated	negative
+Brandy Nelson	99	420001-0201103-8	F	Rivera Wall	75730	notvaccinated	negative
+Jade Carey	82	420001-0201104-6	F	Rebecca Isle	75790	notvaccinated	positive
+Shawn Davis	27	420001-0201105-9	M	Martin Lights	75950	vaccinated	positive
+Nancy Ward	56	420001-0201200-2	F	Roberson Cape	75530	notvaccinated	positive
+Zoe Harrell	41	420001-0201201-8	F	Odonnell Divide	75270	vaccinated	negative
+Taylor Jarvis	57	420001-0201202-1	M	Durham Vista	75260	notvaccinated	negative
+Kristin Oneal	40	420001-0201203-3	M	Steven Plain	75500	vaccinated	positive
+Kimberly Walker	100	420001-0201204-8	F	Stevens Stream	75510	notvaccinated	negative
+Robert Edwards	83	420001-0201205-5	M	Adams Trail	74600	vaccinated	negative
+Claudia Lambert	47	420001-0201300-9	M	Darlene Neck	75550	notvaccinated	positive
+Alicia Roy	100	420001-0201301-8	F	Alexandria Crest	75640	vaccinated	negative
+David Palmer	4	420001-0201302-4	F	Samuel Estates	75270	notvaccinated	negative
+Sara Reed	46	420001-0201303-7	M	Fisher Loop	74600	notvaccinated	negative
+Ricky Brown	113	420001-0201304-9	M	Rich Stravenue	74800	vaccinated	negative
+Emily Rivas	70	420001-0201305-2	F	Paul Points	74400	vaccinated	negative
+Tammy Cole	107	420001-0202000-8	F	Jones Manors	74800	notvaccinated	negative
+Michael Mendoza	115	420001-0202001-8	F	White Points	75890	vaccinated	positive
+Melissa Waller MD	97	420001-0202002-5	M	Rogers Tunnel	75460	notvaccinated	negative
+Kristine Collins	115	420001-0202003-3	M	Hensley Track	75900	vaccinated	negative
+Brian Fisher	71	420001-0202004-5	M	Jennifer Track	75780	vaccinated	negative
+Brent Wade	56	420001-0202005-6	F	Bird Via	75760	notvaccinated	positive
+Jacqueline Petty	87	420001-0202100-1	M	George Mountains	75280	notvaccinated	negative
+Thomas Lewis	58	420001-0202101-6	F	John Turnpike	75340	notvaccinated	negative
+Theresa Horton	22	420001-0202102-1	M	Newton Meadows	75840	notvaccinated	negative
+Seth Perry	90	420001-0202103-5	M	Katrina Hill	75620	notvaccinated	positive
+Peter Terry	90	420001-0202104-1	M	Curtis Stream	75800	notvaccinated	positive
+Donna Martinez	1	420001-0202105-7	M	Hernandez Manors	75500	notvaccinated	positive
+Raymond Spence	36	420001-0202200-2	F	Matthew Islands	75900	vaccinated	positive
+Alexandria Lester	13	420001-0202201-9	M	Jennifer Walks	75760	notvaccinated	positive
+Christopher Mcdonald	106	420001-0202202-7	M	George Land	75500	vaccinated	positive
+Mark Gordon	56	420001-0202203-8	F	Tanner Vista	75510	notvaccinated	negative
+Jacqueline Gardner	19	420001-0202204-4	F	Laura Fort	75260	vaccinated	positive
+Daniel Roberts	55	420001-0202205-7	M	Thompson Hollow	74800	notvaccinated	negative
+Robert Peters	71	420001-0202300-8	F	Connor Key	75260	notvaccinated	positive
+Virginia Mason	97	420001-0202301-7	M	Richard Brooks	75460	notvaccinated	negative
+Sarah Berry	69	420001-0202302-4	F	Jennifer Lodge	75840	notvaccinated	positive
+Matthew Fleming	24	420001-0202303-2	F	Amy River	75800	notvaccinated	positive
+Crystal Lopez	70	420001-0202304-2	F	Theresa Circles	75300	vaccinated	negative
+Melissa Wilson	35	420001-0202305-2	F	Watts Plaza	75750	vaccinated	negative
+Luis White	91	420001-0203000-7	M	Pugh Trail	75790	notvaccinated	negative
+Lisa Adams	9	420001-0203001-4	F	Martinez Orchard	75620	notvaccinated	negative
+Jimmy Warren	83	420001-0203002-8	F	Hernandez Lane	74400	notvaccinated	positive
+Jaime White	92	420001-0203003-3	M	Austin Road	74800	vaccinated	negative
+Jesse Sanchez	15	420001-0203004-6	F	Kelly Mall	75760	vaccinated	positive
+Stephen Edwards	106	420001-0203005-3	M	Crystal Loop	75510	notvaccinated	positive
+Thomas Li	77	420001-0203100-7	M	White Glen	75400	notvaccinated	negative
+Stephen Morris	20	420001-0203101-4	F	Joshua Square	74800	vaccinated	negative
+Chelsea Yang	29	420001-0203102-4	F	Jeremiah Drive	75400	notvaccinated	negative
+Stacey Carlson	107	420001-0203103-2	F	Fletcher Tunnel	74800	vaccinated	negative
+Victoria Shaw	37	420001-0203104-2	F	Alexis Green	75990	notvaccinated	positive
+John Mendoza	96	420001-0203105-7	M	Vaughn Field	75330	notvaccinated	positive
+Mr. Louis Wade	23	420001-0203200-5	M	Humphrey Camp	75520	vaccinated	negative
+Christopher Christensen	17	420001-0203201-4	F	Rachel Ways	75300	vaccinated	positive
+Franklin Simpson	62	420001-0203202-1	M	Colleen Mills	75760	vaccinated	negative
+Sarah Garcia	32	420001-0203203-8	F	Hughes Prairie	75330	notvaccinated	positive
+Michael Knapp	47	420001-0203204-5	M	Robert Way	75650	vaccinated	negative
+Richard Thompson	64	420001-0203205-3	M	Hooper Motorway	75460	vaccinated	negative
+Shannon Brown	112	420001-0203300-8	F	Andrea Port	74400	vaccinated	positive
+Michael Wilkins	72	420001-0203301-9	M	Johnson Inlet	75510	vaccinated	positive
+Andrea Martin	77	420001-0203302-9	M	Bray Rue	75290	vaccinated	positive
+Mary Ray	108	420001-0203303-5	M	Travis Points	75300	notvaccinated	negative
+Alejandro Spencer	46	420001-0203304-7	M	Jones Roads	74200	vaccinated	negative
+Hayden Davis	63	420001-0203305-9	M	Webb Well	75400	vaccinated	negative
+Monica Parker	71	420001-0204000-9	M	Veronica Row	75350	notvaccinated	positive
+Leslie Richardson	92	420001-0204001-3	M	Miguel Isle	75840	vaccinated	negative
+Laura Perez	54	420001-0204002-1	M	Hurst Plaza	75800	notvaccinated	negative
+Jennifer Roberts	95	420001-0204003-6	F	Willis Dale	74400	vaccinated	negative
+Derek Williams	5	420001-0204004-6	F	Benjamin Crest	75730	notvaccinated	positive
+James Stanley	11	420001-0204005-7	M	Sims Bridge	75460	vaccinated	negative
+Charles Allison	80	420001-0204100-9	M	Brandon Shoal	75530	vaccinated	negative
+David Mcdowell	21	420001-0204101-8	F	Wesley Avenue	75620	vaccinated	negative
+Leslie Rodriguez	85	420001-0204102-1	M	Tyrone Unions	75400	vaccinated	negative
+Jeffrey Alvarez	78	420001-0204103-2	F	Martin Islands	75510	notvaccinated	positive
+Rita Wilson	0	420001-0204104-9	M	Franklin Way	75520	vaccinated	positive
+Mr. Joshua Simpson	87	420001-0204105-3	M	Anthony Wall	75340	notvaccinated	negative
+Susan Becker	5	420001-0204200-1	M	Stewart Curve	75660	vaccinated	negative
+Michael Mack	93	420001-0204201-4	F	Torres Motorway	75400	notvaccinated	negative
+Kyle Clark	1	420001-0204202-3	M	Pennington Drive	75340	notvaccinated	negative
+Kimberly Hansen	15	420001-0204203-8	F	Long Circle	75750	notvaccinated	positive
+Ricky White	19	420001-0204204-7	M	Holly Port	75270	vaccinated	positive
+Kara Baker	19	420001-0204205-3	M	Denise Haven	75700	vaccinated	negative
+Tara Dudley	81	420001-0204300-2	F	David Fords	75650	notvaccinated	negative
+Heather Robinson	105	420001-0204301-7	M	Amanda Glens	75640	notvaccinated	positive
+Robin Little	68	420001-0204302-9	M	Butler Rue	74700	vaccinated	negative
+Roger Taylor DVM	77	420001-0204303-6	F	Norma Manors	75640	vaccinated	positive
+Daniel Pope	20	420001-0204304-2	F	Thomas Ridges	75340	notvaccinated	positive
+Heather Scott	31	420001-0204305-9	M	Tara Ranch	75620	notvaccinated	positive
+Tina Collier	55	420001-1000000-6	F	Bond Port	75350	vaccinated	negative
+Sarah Lewis	108	420001-1000001-4	F	Jessica Radial	74800	vaccinated	positive
+Connie Wright	82	420001-1000002-8	F	Ortiz Mall	75840	vaccinated	positive
+Brett Wilson	64	420001-1000003-9	M	Christine Terrace	75850	vaccinated	positive
+Amanda Jordan MD	72	420001-1000004-4	F	Mark Mall	75900	vaccinated	positive
+Sergio Poole	110	420001-1000005-7	M	Robert Union	75650	vaccinated	negative
+Jordan Smith Jr.	4	420001-1000100-5	M	Douglas Land	74600	notvaccinated	positive
+Kelly Le	105	420001-1000101-1	M	Kenneth Light	75330	notvaccinated	positive
+Tony Mann	64	420001-1000102-1	M	Kevin Fords	75600	notvaccinated	negative
+Jordan Hodges	1	420001-1000103-4	F	Butler Path	75850	vaccinated	positive
+Ethan Gonzalez	34	420001-1000104-5	M	Williams Views	75640	vaccinated	positive
+Jonathan Mathis	33	420001-1000105-2	F	Brianna Knoll	75990	vaccinated	negative
+Jeffrey Miller	0	420001-1000200-6	F	Jamie Avenue	75300	vaccinated	positive
+Kimberly Wells	64	420001-1000201-9	M	Peterson Loaf	75330	vaccinated	negative
+Tammy Barron	86	420001-1000202-2	F	Harper Pike	75400	vaccinated	negative
+Perry Thompson	5	420001-1000203-8	F	Amanda Freeway	75700	vaccinated	positive
+Jason Baker	87	420001-1000204-1	M	Tim Canyon	75790	vaccinated	negative
+Megan Rice	13	420001-1000205-9	M	Steven Corner	75400	vaccinated	negative
+Mark Smith	46	420001-1000300-8	F	David Knolls	74800	vaccinated	positive
+Desiree Curry	59	420001-1000301-9	M	Corey Freeway	75730	notvaccinated	positive
+Amy Zamora	29	420001-1000302-4	F	Elizabeth Islands	75580	notvaccinated	negative
+Elizabeth Gordon	14	420001-1000303-5	M	Kelly Curve	75600	vaccinated	positive
+Dr. Jennifer Delacruz DDS	95	420001-1000304-7	M	Andrea Crescent	75500	notvaccinated	positive
+Ann Campbell	42	420001-1000305-8	F	Brian Square	75620	notvaccinated	negative
+Melanie Jones	66	420001-1001000-2	F	Mercer Orchard	75890	notvaccinated	negative
+Michael Shaw	32	420001-1001001-3	M	Robert Road	75990	notvaccinated	negative
+Jason Mason	6	420001-1001002-2	F	Woodard Loop	75730	vaccinated	positive
+Bryan Jackson	80	420001-1001003-6	F	Lisa Isle	75290	vaccinated	negative
+Albert Bell	102	420001-1001004-5	M	Mark Plaza	75280	vaccinated	negative
+Scott Rivera	72	420001-1001005-8	F	Long Tunnel	75990	notvaccinated	negative
+Victor Collins	114	420001-1001100-8	F	Brittany Causeway	75350	notvaccinated	negative
+Maria Burton	103	420001-1001101-8	F	Elliott Bypass	74400	vaccinated	negative
+Randall Barnes	57	420001-1001102-3	M	Adrian Pike	75840	notvaccinated	positive
+Jordan Smith	45	420001-1001103-9	M	Alexandra Path	74000	notvaccinated	negative
+Eric Hill	11	420001-1001104-4	F	Thomas Square	75640	vaccinated	negative
+Joseph Simon	2	420001-1001105-3	M	Smith Harbors	74000	notvaccinated	negative
+David Nelson	4	420001-1001200-6	F	Karen Fields	75780	vaccinated	negative
+Victoria Le	56	420001-1001201-2	F	Curtis Centers	75300	notvaccinated	positive
+Robert Murphy	5	420001-1001202-1	M	Vang Bridge	75280	vaccinated	positive
+Louis Lamb	71	420001-1001203-4	F	Randy Dale	75840	notvaccinated	negative
+Donald Lewis	72	420001-1001204-8	F	Christopher Points	75800	vaccinated	positive
+Fernando Gibson	113	420001-1001205-3	M	Davis Mountain	75780	vaccinated	negative
+Jacob Villarreal	21	420001-1001300-2	F	Miller Forest	74400	notvaccinated	positive
+Stephen Snow	33	420001-1001301-8	F	Elizabeth Place	75510	vaccinated	negative
+Zachary Garcia	36	420001-1001302-9	M	Stephens Field	75780	vaccinated	positive
+Jessica Anderson	88	420001-1001303-6	F	Michelle Terrace	75280	vaccinated	positive
+David Lewis	106	420001-1001304-1	M	Ferrell Garden	75580	notvaccinated	negative
+Holly Hicks	42	420001-1001305-4	F	Ian Canyon	75790	vaccinated	negative
+Madison Harris	51	420001-1002000-1	M	Rowe Burgs	74600	notvaccinated	negative
+Erica Cruz	83	420001-1002001-4	F	Williams Valley	75280	vaccinated	negative
+Nicole Ayala	49	420001-1002002-9	M	John Brook	75750	vaccinated	negative
+John Garcia	46	420001-1002003-4	F	Whitaker Cove	75520	notvaccinated	positive
+Allison Miller	107	420001-1002004-8	F	Wright Gateway	75660	vaccinated	negative
+Sarah Lang	16	420001-1002005-4	F	Timothy Inlet	75660	notvaccinated	positive
+Kristy Simmons	27	420001-1002100-7	M	Allen Pike	75640	vaccinated	positive
+Dr. Reginald Martin	22	420001-1002101-4	F	Jackson Mountain	75500	notvaccinated	negative
+Patrick Carroll	57	420001-1002102-9	M	Norris Knolls	75800	notvaccinated	positive
+Nancy Christensen	51	420001-1002103-4	F	Harris Ranch	74800	vaccinated	positive
+Bryce Williamson	15	420001-1002104-1	M	Christopher Union	75640	notvaccinated	positive
+Frances Charles	15	420001-1002105-5	M	James Terrace	75620	vaccinated	positive
+Teresa Suarez	21	420001-1002200-2	F	Jessica Union	75660	vaccinated	positive
+Joshua Thomas	16	420001-1002201-5	M	Olivia Forges	75900	vaccinated	positive
+Ann Munoz	42	420001-1002202-9	M	Smith Rapids	75300	vaccinated	negative
+Peter Maddox	52	420001-1002203-2	F	Robert Crossroad	75890	vaccinated	negative
+Anita Contreras	85	420001-1002204-9	M	Martin Forge	74800	notvaccinated	negative
+Maria Sanchez	52	420001-1002205-3	M	Angela Trail	75660	vaccinated	positive
+Amy Beltran	81	420001-1002300-9	M	Rogers Harbor	75520	notvaccinated	negative
+Andrew Coffey	91	420001-1002301-1	M	Kimberly Key	75620	notvaccinated	negative
+Natasha Montoya	64	420001-1002302-4	F	Douglas Inlet	75290	notvaccinated	positive
+Julia Cannon	21	420001-1002303-2	F	Becky Drives	75660	vaccinated	positive
+Annette Gonzalez	18	420001-1002304-7	M	Lopez Prairie	75750	notvaccinated	negative
+Jasmine Eaton	108	420001-1002305-2	F	Melanie Orchard	75890	notvaccinated	negative
+Jessica Macias	47	420001-1003000-2	F	Moses Freeway	74000	vaccinated	positive
+Jose Wells	74	420001-1003001-5	M	Seth Burgs	75640	vaccinated	negative
+Sarah Chandler	49	420001-1003002-4	F	Devin Key	75990	vaccinated	positive
+Glenn Cox	104	420001-1003003-4	F	Christian Shoals	75990	vaccinated	positive
+Shannon Cross	8	420001-1003004-8	F	Kathleen Summit	75660	notvaccinated	positive
+Amanda Wright	111	420001-1003005-2	F	Marissa Knoll	74200	notvaccinated	positive
+Anna Jackson	115	420001-1003100-2	F	Jeremy River	75550	notvaccinated	negative
+Kimberly Martinez	79	420001-1003101-9	M	Francis Meadows	75760	notvaccinated	negative
+Janet Hart	92	420001-1003102-4	F	Brooke Drive	74000	notvaccinated	positive
+Mary Hubbard	51	420001-1003103-8	F	Martin View	75990	vaccinated	negative
+Kylie Bonilla	23	420001-1003104-3	M	Leroy Mission	75640	vaccinated	positive
+Barry Stone	38	420001-1003105-3	M	Veronica Rest	74700	notvaccinated	negative
+Thomas Conway	57	420001-1003200-1	M	Eric Extensions	75650	vaccinated	positive
+Nathaniel Berry	25	420001-1003201-6	F	Hansen Tunnel	75510	vaccinated	negative
+Shawn Weber	63	420001-1003202-8	F	Jeffrey Alley	75950	notvaccinated	positive
+Noah Clayton	79	420001-1003203-4	F	Heather Springs	75580	notvaccinated	positive
+John Rice	83	420001-1003204-2	F	Barnett Springs	75730	notvaccinated	negative
+Sheila Young	48	420001-1003205-4	F	Whitaker Fort	74700	notvaccinated	negative
+Janet Palmer	50	420001-1003300-2	F	Gary Ports	75850	vaccinated	negative
+Matthew Johnson	85	420001-1003301-8	F	Pacheco View	75350	notvaccinated	negative
+Melissa Frazier	65	420001-1003302-4	F	Peter Garden	75660	notvaccinated	positive
+Gregory Nguyen	23	420001-1003303-2	F	Kenneth Oval	74200	vaccinated	positive
+Ryan Pena	115	420001-1003304-2	F	April Centers	75790	vaccinated	negative
+Jennifer Prince	100	420001-1003305-6	F	Pineda Dale	75270	notvaccinated	positive
+Jennifer Stephens	14	420001-1004000-1	M	Jasmine Park	75400	vaccinated	positive
+Eric Rogers	53	420001-1004001-1	M	Garza Green	75290	notvaccinated	negative
+Cheyenne Carey	68	420001-1004002-7	M	Thomas Villages	75650	notvaccinated	positive
+Dawn Bowen	53	420001-1004003-6	F	Garcia Squares	75790	notvaccinated	negative
+Miss Mindy Kerr	39	420001-1004004-8	F	Melissa Flat	75750	notvaccinated	positive
+Julia Lopez	38	420001-1004005-7	M	Stephanie Creek	75530	notvaccinated	positive
+Gina Hanna	60	420001-1004100-7	M	Tonya Run	75330	notvaccinated	negative
+Darryl Price	45	420001-1004101-2	F	Jacobson Meadows	75510	notvaccinated	negative
+Christopher Patel	101	420001-1004102-1	M	Murphy Springs	75520	notvaccinated	negative
+Jamie Franklin	3	420001-1004103-7	M	Jill Isle	74200	notvaccinated	positive
+Cindy Murray	68	420001-1004104-9	M	Ramos Freeway	75280	vaccinated	negative
+Elizabeth Munoz	15	420001-1004105-4	F	Jamie Station	75600	notvaccinated	negative
+Antonio Thompson	109	420001-1004200-7	M	Kennedy Corners	75990	notvaccinated	negative
+Susan Sosa	25	420001-1004201-9	M	Caldwell Road	74400	notvaccinated	negative
+Krista Smith	103	420001-1004202-1	M	Bill Mountains	74800	vaccinated	negative
+Diana Goodman	46	420001-1004203-3	M	Miller Valley	75780	notvaccinated	positive
+Christopher Cruz	10	420001-1004204-3	M	Flores Alley	75660	vaccinated	negative
+Jennifer Tapia MD	51	420001-1004205-5	M	Jefferson Isle	75300	notvaccinated	negative
+Robert Anderson	57	420001-1004300-9	M	Buckley Square	74400	vaccinated	positive
+Shelley Bowman	54	420001-1004301-6	F	Rowe Loop	75750	vaccinated	positive
+Dr. Kathleen Graham	48	420001-1004302-3	M	Tyler Crescent	75330	notvaccinated	positive
+Brittany Carter	2	420001-1004303-2	F	Yolanda Fork	75290	notvaccinated	negative
+John Lopez	109	420001-1004304-2	F	Stephanie Divide	75280	vaccinated	negative
+Patricia Walton	39	420001-1004305-2	F	Leblanc Shoal	75530	vaccinated	positive
+Kelly Blake	67	420001-1100000-1	M	Robert Estate	75510	notvaccinated	negative
