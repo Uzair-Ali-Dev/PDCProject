@@ -1,12 +1,17 @@
-def getRegionCount(regionList, data):
+def getRegionCount(totalCount,regionList, data):
     # regionIndex is the array index where region name is stored
-    regionIndex = 2
-
+    regionIndex = 6
+    covidStatusIndex=8
     for line in data:
         line = line.split("\t")
-        regionList[line[regionIndex]] = regionList[line[regionIndex]] + 1
+        if str(line[8])=="positive":
+            regionList[line[regionIndex]] = regionList[line[regionIndex]] + 1
+            totalCount[line[regionIndex]]= totalCount[line[regionIndex]] +1
+        else:
+            totalCount[line[regionIndex]]= totalCount[line[regionIndex]] +1
 
-    return regionList
+    dict={"pCount":regionList,"totalCount":totalCount}
+    return dict
 
 
 def getUserDetails(data, options):

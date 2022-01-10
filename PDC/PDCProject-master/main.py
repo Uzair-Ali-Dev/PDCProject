@@ -9,9 +9,9 @@ args2 = {
 
 start = time.time()
 
-# os.system('mpiexec -n 4 python script.py "' + str(args1) + '"')
+os.system('mpiexec -n 4 python script.py "' + str(args1) + '"')
 print("<---->")
-os.system('mpiexec -n 3 python script.py "' + str(args2) + '"')
+# os.system('mpiexec -n 3 python script.py "' + str(args2) + '"')
 
 end = time.time()
 print("Duration: ", end - start)
