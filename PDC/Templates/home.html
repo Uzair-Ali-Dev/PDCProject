@@ -63,6 +63,9 @@
               <div class="bg-primary mt-1 text-white">
                 Total Population: <span>{{i.totalCount}}</span>
               </div>
+              <div class="bg-success mt-1 text-white">
+                Total vaccinated: <span>{{i.vaccinationCount}}</span>
+              </div>
               <div class="progress mt-2" style="height: 25px">
               {% if i.positiveRatio > 25 and i.positiveRatio < 51 %}
                 <div

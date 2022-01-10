@@ -1,23 +1,25 @@
 from datetime import date
 from mpi4py import MPI
 # from types import NoneType
-def getRegionCount(totalCount,regionList, data):
+def getRegionCount(vaccinationCount,totalCount,regionList, data):
     # regionIndex is the array index where region name is stored
     regionIndex = 6
     covidStatusIndex=8
     for line in data:
         line = line.split("\t")
+        if str(line[7])=="vaccinated":
+            vaccinationCount[line[regionIndex]] = vaccinationCount[line[regionIndex]] + 1
         if str(line[8])=="positive":
             regionList[line[regionIndex]] = regionList[line[regionIndex]] + 1
             totalCount[line[regionIndex]]= totalCount[line[regionIndex]] +1
         else:
             totalCount[line[regionIndex]]= totalCount[line[regionIndex]] +1
 
-    dict={"pCount":regionList,"totalCount":totalCount}
+    dict={"vaccinationCount":vaccinationCount,"pCount":regionList,"totalCount":totalCount}
     return dict
 
 
-def getUserDetails(data, options):
+def getUserDetails(data, options,comm):
 
     zipCodeIndex = 6
     # ageIndex = 1
@@ -40,7 +42,6 @@ def getUserDetails(data, options):
             # int(line[ageIndex]) >= minAge
             # int(line[ageIndex]) <= maxAge
         if (line[zipCodeIndex] == str(zipCode)and age >= minAge and age <= maxAge):
-            # comm.abort()
             dict={'Name':line[0],'Age':age,'Cnic':line[2],'Gender':line[3],'Street':line[5],'ZipCode':line[6],'Vaccinestatus':line[7],'CovidStatus':line[8]}
             userDetails.append(dict)
 

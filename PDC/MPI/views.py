@@ -15,7 +15,7 @@ def home(request):
     for i in data:
         line=i.split("\t")
         # print(line[0],line[1])
-        dit={'zipCode':line[0],'zipName':line[1],'positiveCount':line[2],'totalCount':line[3],'positiveRatio':(round((int(line[2])/int(line[3]))*100))}
+        dit={'zipCode':line[0],'zipName':line[1],'positiveCount':line[2],'totalCount':line[3],'positiveRatio':(round((int(line[2])/int(line[3]))*100)),'vaccinationCount':line[4]}
         Array.append(dit)
     dict={'list':Array}
     # print("--------------",dict)

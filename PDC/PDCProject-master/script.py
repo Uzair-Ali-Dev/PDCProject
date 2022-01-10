@@ -64,9 +64,11 @@ if rank == 0:
     
     totalCount={}
     rdata = {}
+    vaccinationCount={}
     for i in zipCodes:
         rdata[i] = 0
         totalCount[i]=0
+        vaccinationCount[i]=0
 
     # Reading Data from the file
     file = open("PDCProject-master/areazipcode.txt", "r")
@@ -94,6 +96,7 @@ if rank == 0:
         if options["operation"] == "getRegionData":
             comm.send(rdata, dest=i)
             comm.send(totalCount, dest=i)
+            comm.send(vaccinationCount, dest=i)
 
     # Sending the last chunk(remaining elements) to the last process
     i = i + 1
@@ -106,16 +109,18 @@ if rank == 0:
     if options["operation"] == "getRegionData":
         comm.send(rdata, dest=i)
         comm.send(totalCount, dest=i)
+        comm.send(vaccinationCount, dest=i)
     # elif options["operation"] == "getUserInfo":
     #     comm.send(rdata, dest=i)
     # Master processing its own set of data
     print("Master Here")
     if options["operation"] == "getRegionData":
-        result = h.getRegionCount(totalCount,rdata, data[0:chunk_size])
+        result = h.getRegionCount(vaccinationCount,totalCount,rdata, data[0:chunk_size])
         indiCount=result["pCount"]
         tCount=result["totalCount"]
+        vCount=result["vaccinationCount"]
     elif options["operation"] == "getUserInfo":
-        userDetails = h.getUserDetails(data[0:chunk_size], options["params"])
+        userDetails = h.getUserDetails(data[0:chunk_size], options["params"],comm)
         print("User Details master---------------------------: ",len(userDetails))
         for i in userDetails:
             usersList.append(i)
@@ -135,19 +140,23 @@ if rank == 0:
         for i in range(1, size):
             ind = comm.recv(source=i)
             tC=comm.recv(source=i)
+            vC=comm.recv(source=i)
             for key in ind:
                 indiCount[key] += ind[key]
             for key in tC:
                 totalCount[key] += tC[key]
+            for key in vC:
+                vCount[key] += vC[key]
 
         print("Master Count positive: ", indiCount)
         print("Master Count all: ", totalCount)
+        print("Master Count vacinated: ", vCount)
         file = open("PDCProject-master/temp.txt", "w")
         # print("------",zipNames)
         
         for key,value in indiCount.items():
             # print(key ,value)
-            file.write(str(key) +"\t"+str(zipNames[str(key)])+ "\t" + str(value) +"\t"+ str(totalCount[key])+"\n")
+            file.write(str(key) +"\t"+str(zipNames[str(key)])+ "\t" + str(value) +"\t"+ str(totalCount[key])+"\t"+ str(vCount[key])+"\n")
         # file.write("\b")
         file.close()
 
@@ -182,14 +191,17 @@ else:
     if options["operation"] == "getRegionData":
         rdata = comm.recv(source=0)
         totalCount = comm.recv(source=0)
-        result = h.getRegionCount(totalCount,rdata, data)
+        vaccinationCount=comm.recv(source=0)
+        result = h.getRegionCount(vaccinationCount,totalCount,rdata, data)
         indiCount=result["pCount"]
         tCount=result["totalCount"]
+        vCount=result["vaccinationCount"]
         comm.send(indiCount, dest=0)
         comm.send(tCount, dest=0)
+        comm.send(vCount, dest=0)
 
     elif options["operation"] == "getUserInfo":
-        userDetails = h.getUserDetails(data, options["params"] )
+        userDetails = h.getUserDetails(data, options["params"],comm )
         print("User Details child---------------------------: ",len(userDetails),rank)
         comm.send(userDetails, dest=0)
 
