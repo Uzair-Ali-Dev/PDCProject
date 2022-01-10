@@ -23,7 +23,7 @@
     ></script>
   </head>
   <body>
-    <div class="container">
+    <div class="container mb-4">
       <div class="row border border-dark mt-5 p-5">
         <div class="col-md-12 text-center">
           <h1 class="text-uppercase">
@@ -41,33 +41,68 @@
       <div id="myDIV" class="row mt-2 gy-4">
         {% for i in list%}
         <div id="icard" class="col-sm-3">
-          <div class="card border border-dark">
-            <div class="card-body p-5 text-center">
-              <h2>{{i.zipName}}</h2>
+          <div class="card border border-dark h-100" >
+            <div class="card-body justify-content-center align-items-end p-5 text-center" >
+              <h2 class="text-uppercase">{{i.zipName}}</h2>
               <div class="bg-primary mt-3 text-white">Zip Code: {{i.zipCode}}</div>
-              <div class="bg-warning mt-2">
+              <div class="bg-primary mt-2 text-white">
                 Cases Confirmed: <span>{{i.positiveCount}}</span>
               </div>
-              <div class="bg-warning mt-1">
+              <div class="bg-primary mt-1 text-white">
                 Total Population: <span>{{i.totalCount}}</span>
               </div>
               <div class="progress mt-2" style="height: 25px">
+              {% if i.positiveRatio > 25 and i.positiveRatio < 51 %}
                 <div
-                  class="progress-bar"
+                  class="progress-bar bg-warning text-dark"
                   role="progressbar"
-                  style="width:{{i.positiveCount}}/{{i.totalCount}}*{{100}}%"
-                  aria-valuenow="76"
+                  style="width:{{i.positiveRatio}}%"
+        
                   aria-valuemin="0"
                   aria-valuemax="100"
                 >
-                  {{i.positiveCount}}
-                </div>
+                  {{i.positiveRatio}}%
+              </div>
+              {% elif i.positiveRatio > 50 %}
+              <div
+              class="progress-bar bg-danger "
+              role="progressbar"
+              style="width:{{i.positiveRatio}}%"
+    
+              aria-valuemin="0"
+              aria-valuemax="100"
+              >
+              {{i.positiveRatio}}%
+              </div>
+              {% else %}
+              <div
+              class="progress-bar bg-success "
+              role="progressbar"
+              style="width:{{i.positiveRatio}}%"
+    
+              aria-valuemin="0"
+              aria-valuemax="100"
+              >
+              {{i.positiveRatio}}%
+              </div>
+              {% endif %}
+                
               </div>
             </div>
-
-            <div class="btn btn-primary btn-block">
-              <i class="fa-solid fa-lock"></i> Lockdown should be imposed
+            {% if i.positiveRatio > 50  %}
+            <div class="btn btn-danger btn-block text-uppercase">
+              <i class="fa-solid fa-skull"></i> Lockdown should be imposed
             </div>
+            {% elif i.positiveRatio > 25 and i.positiveRatio < 51 %}
+            <div class="btn btn-warning btn-block text-uppercase">
+              <i class="fa-solid fa-arrows-rotate"></i> Under Consideration
+            </div>
+            {% else %}
+            <div class="btn btn-success btn-block text-uppercase">
+              <i class="fa-solid fa-circle-check"></i> Lockdown Not neccessory
+            </div>
+            {% endif %}
+            
           </div>
         </div>
         {% endfor %}
