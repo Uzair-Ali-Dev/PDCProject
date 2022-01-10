@@ -1,0 +1,6 @@
+Uzair	23	Garden
+Bari	24	DHA
+Taha	25	Garden
+Ali	12	Nazimabad
+Asad	15	Defence
+Habib	11	DHA
