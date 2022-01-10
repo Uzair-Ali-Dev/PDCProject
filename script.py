@@ -14,10 +14,10 @@ if rank == 0:
     args = sys.argv[1]
     args = args.replace("'", '"')
     options = json.loads(args)
-
-    Areas = ["Shadman", "Garden", "DHA", "Bahria", "Nazimabad", "Defence"]
+    usersList = []
+    zipCodes = ["101", "102", "103", "104", "105", "106"]
     rdata = {}
-    for i in Areas:
+    for i in zipCodes:
         rdata[i] = 0
 
     # Reading Data from the file
@@ -55,18 +55,35 @@ if rank == 0:
     if options["operation"] == "getRegionData":
         indiCount = h.getRegionCount(rdata, data[0:chunk_size])
 
+    elif options["operation"] == "getUserInfo":
+        userDetails = h.getUserDetails(data[0:chunk_size], options["params"])
+        for i in userDetails:
+            usersList.append(i)
+
+        # Receiving the results from the processes
+        print("User Details Master: ", userDetails)
+
     for i in range(0, chunk_size):
         print(data[i])
 
     # Receiving the results from the processes
 
-    for i in range(1, size):
-        ind = comm.recv(source=i)
-        if options["operation"] == "getRegionData":
+    if options["operation"] == "getRegionData":
+        for i in range(1, size):
+            ind = comm.recv(source=i)
             for key in ind:
                 indiCount[key] += ind[key]
 
-    print("Master Count: ", indiCount)
+        print("Master Count: ", indiCount)
+
+    if options["operation"] == "getUserInfo":
+        for i in range(1, size):
+            result = comm.recv(source=i)
+            for j in result:
+                usersList.append(j)
+            # print("Result: ", result)
+
+        print("User Details: ", usersList)
     print("Master Done")
 else:
     # Receiving the chunk size
@@ -83,6 +100,9 @@ else:
         indiCount = h.getRegionCount(rdata, data)
         comm.send(indiCount, dest=0)
 
-    for i in range(0, chunk_size):
+    elif options["operation"] == "getUserInfo":
+        userDetails = h.getUserDetails(data, options["params"])
+        comm.send(userDetails, dest=0)
 
+    for i in range(0, chunk_size):
         print(data[i])
