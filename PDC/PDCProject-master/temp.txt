@@ -1,9 +1,1 @@
-Jessica Taylor	82	420001-0003304-1	M	Richardson Summit	74700	notvaccinated	positive
-Jenna Jones	91	420001-0102201-2	F	Frederick Ridges	74700	notvaccinated	negative
-Pamela Price	1	420001-0102202-1	M	Hailey Shoal	74700	notvaccinated	negative
-Robert Henry	93	420001-0103005-8	F	Lang Locks	74700	vaccinated	positive
-Jodi Rodriguez	29	420001-0200202-5	M	Harrell Spring	74700	notvaccinated	negative
-Richard Kim	9	420001-0201002-4	F	Cooper Divide	74700	notvaccinated	positive
-Robin Little	68	420001-0204302-9	M	Butler Rue	74700	vaccinated	negative
-Barry Stone	38	420001-1003105-3	M	Veronica Rest	74700	notvaccinated	negative
-Sheila Young	48	420001-1003205-4	F	Whitaker Fort	74700	notvaccinated	negative
+Christina White	74	420001-0100302-1	M	Ramirez Fork	75640	vaccinated	negative

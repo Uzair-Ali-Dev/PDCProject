@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Find Users</title>
+    <title>Data Analyzer</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -28,62 +28,124 @@
           <h1 class="text-uppercase">
             <i class="fa-solid fa-file"></i> Data Analyzer
           </h1>
+          <button
+            class="btn btn-primary"
+            onclick="window.location.href='http:\//127.0.0.1:8000/home/'"
+          >
+            <i class="fa-solid fa-file"></i> Home
+          </button>
           <form action="" method="post">
             {% csrf_token %}
-          <div class="row mt-5">
-            <div class="col-sm-6 align-items-center">
-              <input
-                name="zipcode"
-                class="form-control"
-                id="myInput"
-                type="text"
-                placeholder="Enter the Zip Code"
-              />
-            </div>
-            <div class="col-sm-3 justify-content-center">
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Min</span>
-                <input
-                  name="minAge"
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter Min Age"
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
+            <div class="row mt-5">
+              <div class="col-sm-4 align-items-center">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fa-solid fa-id-card text-secondary mx-2"></i>
+                    CNIC</span
+                  >
+                  <input
+                    name="cnic"
+                    type="text"
+                    class="form-control"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-2 align-items-center">
+                <select
+                  name="gender"
+                  class="form-select form-select mb-3"
+                  aria-label=".form-select-lg example"
+                >
+                  <option value="0" selected>Gender</option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                </select>
+              </div>
+
+              <div class="col-sm-2 align-items-center">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fa-solid fa-location-dot text-secondary mx-2"></i
+                    >Zip Code</span
+                  >
+                  <input
+                    name="zipcode"
+                    type="text"
+                    class="form-control"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-2 justify-content-center">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fa-solid fa-less-than mx-2 text-secondary"></i></i>Min
+                    Age</span
+                  >
+                  <input
+                    name="minAge"
+                    type="text"
+                    class="form-control"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-2 justify-content-center">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="fa-solid fa-greater-than mx-2 text-secondary"></i>Max
+                    Age</span
+                  >
+                  <input
+                    name="maxAge"
+                    type="text"
+                    class="form-control"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
               </div>
             </div>
-            <div class="col-sm-3 justify-content-center">
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Max</span>
-                <input
-                  name="maxAge"
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter Max Age"
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
+            <div class="row">
+              <div class="col-sm-12">
+                <button type="submit" class="btn btn-primary btn-lg w-100">
+                  Analyze
+                </button>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <button type="submit" class="btn btn-primary btn-lg w-100">
-                Analyze
-              </button>
-            </div>
-          </div>
-        </form>
+          </form>
         </div>
       </div>
-      <div class="row mt-3">
+      <div class="row mt-3 mb-1">
+        <div class="col-sm-6">
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon1"
+              ><i class="fa-solid fa-search text-secondary"></i
+            ></span>
+            <input
+              id="search"
+              name="search"
+              type="text"
+              class="form-control"
+              placeholder="Search for a particular record"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-sm-12">
-          <table class="table border border-dark ">
+          <table id="table" class="table border border-dark">
             <thead>
               <tr>
                 <th scope="col">Sno#</th>
-                <th  scope="col">Name</th>
+                <th scope="col">Name</th>
                 <th scope="col">Age</th>
                 <th scope="col">Cnic</th>
                 <th scope="col">Gender</th>
@@ -95,9 +157,12 @@
             </thead>
             <tbody>
               {% for i in list %}
-              <tr>
-                {% comment %} # dict={'Name':line[0],'Age':age,'Cnic':line[2],'Gender':line[3],'Street':line[5],'ZipCode':line[6],'Vaccinestatus':line[7],'CovidStatus':line[8]} {% endcomment %}
-                {% comment %} <th scope="row">1</th> {% endcomment %}
+              <tr id="item">
+                {% comment %} #
+                dict={'Name':line[0],'Age':age,'Cnic':line[2],'Gender':line[3],'Street':line[5],'ZipCode':line[6],'Vaccinestatus':line[7],'CovidStatus':line[8]}
+                {% endcomment %} {% comment %}
+                <th scope="row">1</th>
+                {% endcomment %}
                 <td class="text-capitalize">{{i.Sno}}</td>
                 <td class="text-capitalize">{{i.Name}}</td>
                 <td class="text-capitalize">{{i.Age}}</td>
@@ -105,17 +170,25 @@
                 <td class="text-capitalize">{{i.Gender}}</td>
                 <td class="text-capitalize">{{i.Street}}</td>
                 <td class="text-capitalize">{{i.ZipCode}}</td>
-                {% if i.Vaccinestatus == "not vaccinated"  %}
-                <td class="text-capitalize text-danger "><i class="fa-solid fa-xmark"> </i> {{i.Vaccinestatus}}</td>
+                {% if i.Vaccinestatus == "not vaccinated" %}
+                <td class="text-capitalize text-danger">
+                  <i class="fa-solid fa-xmark"> </i> {{i.Vaccinestatus}}
+                </td>
                 {% else %}
-                <td class="text-capitalize text-success"><i class="fa-solid fa-check"> </i> {{i.Vaccinestatus}}</td>
-                {% endif %}
-                {% if i.CovidStatus == "positive"  %}
-                <td class="text-capitalize text-danger"><i class="fa-solid fa-face-frown-open"></i> {{i.CovidStatus}}</td>
+                <td class="text-capitalize text-success">
+                  <i class="fa-solid fa-check"> </i> {{i.Vaccinestatus}}
+                </td>
+                {% endif %} {% if i.CovidStatus == "positive" %}
+                <td class="text-capitalize text-danger">
+                  <i class="fa-solid fa-face-frown-open"></i> {{i.CovidStatus}}
+                </td>
                 {% else %}
-                <td class="text-capitalize text-success"> <i class="fa-solid fa-face-smile "></i> {{i.CovidStatus}}</td>
-                {% endif %}
-                {% comment %} <td>{{i.cnic}}</td> {% endcomment %}
+                <td class="text-capitalize text-success">
+                  <i class="fa-solid fa-face-smile"></i> {{i.CovidStatus}}
+                </td>
+                {% endif %} {% comment %}
+                <td>{{i.cnic}}</td>
+                {% endcomment %}
               </tr>
               {% endfor %}
             </tbody>
@@ -123,5 +196,16 @@
         </div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#search").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $("#table #item").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+      });
+    </script>
   </body>
 </html>
